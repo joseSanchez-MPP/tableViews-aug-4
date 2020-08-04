@@ -614,7 +614,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let buttonText = indexPath.row == 563 ? "Yay 😌" : "No it doesn't 😢"
         
         let alertView = UIAlertController(title: "Your movie \(title)", message: "Your movie, \(listItems[indexPath.row]), \(message)", preferredStyle: UIAlertController.Style.alert)
-        alertView.addAction(UIAlertAction(title: buttonText, style: UIAlertAction.Style.default, handler: nil))
+        alertView.addAction(UIAlertAction(title: buttonText, style: UIAlertAction.Style.cancel, handler: nil))
         self.present(alertView, animated: true, completion: nil)
     }
     
